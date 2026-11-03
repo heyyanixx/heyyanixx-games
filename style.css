@@ -1,0 +1,36 @@
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+html,body{height:100%;background:#060608;overflow:hidden;touch-action:none;user-select:none;-webkit-user-select:none}
+body{display:flex;align-items:center;justify-content:center;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:#fff}
+#stage{position:relative;overflow:hidden;background:#060608}
+#cv{position:absolute;inset:0;width:100%;height:100%;display:block}
+#hud{position:absolute;left:0;right:0;top:0;height:7em;pointer-events:none;opacity:0;transition:opacity .3s}
+#hud.show{opacity:1}
+#score{position:absolute;top:.3em;left:0;right:0;text-align:center;font-weight:900;font-size:3.6em;color:#e3b65a;text-shadow:0 .08em 0 #060608,0 0 .4em rgba(0,0,0,.5)}
+#best{position:absolute;top:5.9em;left:0;right:0;text-align:center;font-weight:800;font-size:.85em;letter-spacing:.15em;color:#fff;opacity:.8}
+#lives{position:absolute;top:1.4em;left:1.2em;display:flex;gap:.35em}
+.ch{display:block;width:1.3em;height:2em;border-radius:.65em .65em .5em .5em;background:#e3b65a;border:.15em solid #060608;position:relative}
+.ch:after{content:"";position:absolute;left:50%;top:.35em;width:.7em;height:.5em;margin-left:-.35em;border:.15em solid #060608;border-bottom:0;border-radius:.4em .4em 0 0}
+.ch.gone{background:#444;opacity:.45}
+.icon{position:absolute;top:1.1em;width:2.8em;height:2.8em;border-radius:50%;border:.12em solid #e3b65a;background:rgba(6,6,8,.75);display:flex;align-items:center;justify-content:center;cursor:pointer;z-index:5}
+.icon svg{width:1.4em;height:1.4em;fill:#e3b65a;stroke:#e3b65a}
+#mute{right:1em}#pausebtn{right:4.3em}
+#mute .x{display:none}#mute.off .x{display:block}#mute.off .w{display:none}
+.ov{position:absolute;inset:0;display:none;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:2em;background:rgba(6,6,8,.72);z-index:4}
+.ov.show{display:flex}
+#title{background:linear-gradient(180deg,rgba(6,6,8,.92) 0%,rgba(6,6,8,.55) 55%,rgba(6,6,8,.15) 100%);justify-content:flex-start;padding-top:5.5em}
+.logo{display:flex;flex-direction:column;align-items:center;transform:rotate(-4deg);margin-bottom:1.2em}
+.logo .l1{font-weight:900;font-size:2.4em;color:#fff;letter-spacing:.06em;line-height:1}
+.logo .l2{font-weight:900;font-size:4.2em;color:#e3b65a;line-height:1;text-shadow:.06em .06em 0 #7b2f59}
+.logo .l3{margin-top:.5em;font-weight:800;font-size:1em;letter-spacing:.4em;color:#060608;background:#e3b65a;padding:.25em .7em}
+.how{font-size:1.15em;line-height:1.5;opacity:.95;margin:.6em 0 1.4em}
+.big{font:900 1.7em system-ui,sans-serif;letter-spacing:.08em;color:#060608;background:#e3b65a;border:0;border-radius:2em;padding:.55em 2.2em;box-shadow:0 .2em 0 #8a6a2a;cursor:pointer}
+.big:active{transform:translateY(.12em);box-shadow:0 .08em 0 #8a6a2a}
+.tb{margin-top:1em;font-size:1em;opacity:.85}
+.credit{position:absolute;bottom:1.6em;left:0;right:0;font-size:.85em;opacity:.75;line-height:1.5}
+.credit b{color:#e3b65a;letter-spacing:.05em}.credit span{font-size:.85em;opacity:.8}
+.stamp{font-weight:900;font-size:3.6em;color:#ff3b3b;border:.08em solid #ff3b3b;padding:.05em .3em;transform:rotate(-8deg);margin-bottom:.6em;border-radius:.15em}
+.lbl{letter-spacing:.3em;font-size:.9em;opacity:.8}
+.final{font-weight:900;font-size:5em;color:#e3b65a;line-height:1.1}
+.newb{display:none;color:#060608;background:#e3b65a;font-weight:900;padding:.15em .6em;border-radius:.3em;margin:.3em 0}
+.verdict{font-size:1.3em;font-weight:800;margin:.6em 0 .2em;max-width:16em}
+.pz{font-weight:900;font-size:3em;color:#e3b65a}

@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<script src="https://www.youtube.com/game_api/v1"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<title>Ek Aur Aayega! – Overload Auto | HEYYANIXX Studio</title>
+<meta name="description" content="Tap to stack passengers on a bumpy auto rickshaw. Uncle, aunty, goat, gas cylinder... ek aur aayega! A free funny one-tap game by HEYYANIXX Studio.">
+<meta property="og:title" content="Ek Aur Aayega! – Overload Auto">
+<meta property="og:description" content="One-tap desi stacking chaos. How many can YOUR auto carry?">
+<meta property="og:type" content="website">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#060608">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<div id="stage">
+  <canvas id="cv" aria-label="Game: Ek Aur Aayega"></canvas>
+  <div id="hud">
+    <div id="lives" aria-label="chances left"></div>
+    <div id="score">0</div>
+    <div id="best">BEST 0</div>
+  </div>
+  <button id="pausebtn" class="icon" aria-label="Pause"><svg viewBox="0 0 24 24"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg></button>
+  <button id="mute" class="icon" aria-label="Mute"><svg viewBox="0 0 24 24"><path d="M4 9h4l5-4v14l-5-4H4z"/><path class="w" d="M16 8.5c1.2 1 1.8 2.2 1.8 3.5s-.6 2.5-1.8 3.5" fill="none" stroke-width="2"/><path class="x" d="M16 9l5 6M21 9l-5 6" fill="none" stroke-width="2"/></svg></button>
+  <section id="title" class="ov show">
+    <div class="logo"><span class="l1">EK AUR</span><span class="l2">AAYEGA!</span><span class="l3">OVERLOAD AUTO</span></div>
+    <p class="how">Tap to drop passengers on the auto.<br>Khadda aaye toh sambhal ke!<br>3 gire = <b>OVERLOAD</b></p>
+    <button id="play" class="big">CHALO!</button>
+    <p class="tb">Best: <b id="tBest">0</b></p>
+    <p class="credit">by <b>HEYYANIXX Studio</b><br><span>contact@heyyanixx.de5.net</span></p>
+  </section>
+  <section id="over" class="ov">
+    <div class="stamp">OVERLOAD!</div>
+    <p class="lbl">Passengers</p>
+    <div class="final" id="ovScore">0</div>
+    <p id="ovNew" class="newb">NEW BEST!</p>
+    <p class="verdict" id="ovVerdict"></p>
+    <p class="tb">Best: <b id="ovBest">0</b></p>
+    <button id="again" class="big">PHIR SE</button>
+    <p class="credit">by <b>HEYYANIXX Studio</b></p>
+  </section>
+  <section id="paused" class="ov"><div class="pz">PAUSED</div><p class="how">Tap to continue</p></section>
+</div>
+<script src="../yt.js"></script>
+<script src="../lib/matter.min.js"></script>
+<script src="../lib/zzfx-micro.js"></script>
+<script src="../game.js"></script>
+</body>
+</html>
